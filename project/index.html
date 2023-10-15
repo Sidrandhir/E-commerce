@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-2">
+        <h1>Welcome to Our E-commerce Store</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filter p-3">
+                    <h4>Filter</h4>
+                    <div class="form-group">
+                        <label for="categories">Categories</label>
+                        <select class="form-control" id="categories">
+                            <option value="all">All</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <!-- Add more categories as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender">
+                            <option value="all">All</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <!-- Add more gender options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="Enter age">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="product-list row" id="product-list">
+                    <!-- Product cards will be dynamically generated here -->
+                    <!-- Example of an image in the product card -->
+                    <img src="home.jpg" alt="Product 1 Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
